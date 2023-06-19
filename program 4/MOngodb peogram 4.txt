@@ -1,0 +1,5 @@
+program 4;
+1.db.students.find({name:{$regex:"^C"}}).pretty();
+2.db.students.find({name:{$regex:"r$"}}).pretty();
+3.db.students.find({dept:{$regex:"CS"}}).pretty();
+4.db.students.deleteMany({dept:{$regex:"EC"}})
